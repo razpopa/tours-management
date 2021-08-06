@@ -6,4 +6,41 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\ArtInstitute.jpg" />
+    <None Remove="Images\Cloud.jpg" />
+    <None Remove="Images\Fountain.jpg" />
+    <None Remove="Images\Garden.jpg" />
+    <None Remove="Images\Lunch.jpg" />
+    <None Remove="Images\MapPin.png" />
+    <None Remove="Images\Pastry.jpg" />
+    <None Remove="Images\Pretzel.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ArtInstitute.jpg" />
+    <Resource Include="Images\Cloud.jpg" />
+    <Resource Include="Images\Fountain.jpg" />
+    <Resource Include="Images\Garden.jpg" />
+    <Resource Include="Images\Lunch.jpg" />
+    <Resource Include="Images\MapPin.png" />
+    <Resource Include="Images\Pastry.jpg" />
+    <Resource Include="Images\Pretzel.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Translations\LangResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LangResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Translations\LangResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LangResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>

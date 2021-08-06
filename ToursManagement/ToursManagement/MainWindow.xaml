@@ -3,10 +3,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ToursManagement"
+        xmlns:resources="clr-namespace:ToursManagement.Translations"
+        xmlns:views="clr-namespace:ToursManagement.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="{x:Static resources:LangResources.TourManagement}" Height="700" Width="800"
+        WindowState="Maximized"
+        FontSize="18">
+    <StackPanel>
+        <TextBlock x:Name="header"
+                   TextWrapping="Wrap"
+                   Text="{x:Static resources:LangResources.TourManagement}"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="10,5,0,5"/>
+        <TabControl x:Name="tabControl"
+                    MinHeight="980">
+            <TabItem Header="{x:Static resources:LangResources.TourStops}">
+                <Grid Background="#ffe5e5e5"/>
+            </TabItem>
+            
+            <TabItem Header="{x:Static resources:LangResources.Details}">
+                <views:DetailView />
+            </TabItem>
+            
+            <TabItem Header="{x:Static resources:LangResources.WeeklyCalendar}">
+                <Grid Background="#ffe5e5e5" />
+            </TabItem>
+        </TabControl>
+    </StackPanel>
 </Window>
