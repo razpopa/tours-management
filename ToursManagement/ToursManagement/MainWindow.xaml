@@ -6,9 +6,11 @@
         xmlns:resources="clr-namespace:ToursManagement.Translations"
         xmlns:views="clr-namespace:ToursManagement.Views"
         mc:Ignorable="d"
-        Title="{x:Static resources:LangResources.TourManagement}" Height="700" Width="800"
+        Title="{x:Static resources:LangResources.TourManagement}" 
+        Height="700" Width="800"
         WindowState="Maximized"
         FontSize="18">
+    
     <StackPanel>
         <TextBlock x:Name="header"
                    TextWrapping="Wrap"
@@ -16,10 +18,11 @@
                    FontSize="24"
                    FontWeight="Bold"
                    Margin="10,5,0,5"/>
+        
         <TabControl x:Name="tabControl"
-                    MinHeight="980">
+                    MinHeight="680">
             <TabItem Header="{x:Static resources:LangResources.TourStops}">
-                <Grid Background="#ffe5e5e5"/>
+                <views:TourStopsView />
             </TabItem>
             
             <TabItem Header="{x:Static resources:LangResources.Details}">
@@ -27,7 +30,7 @@
             </TabItem>
             
             <TabItem Header="{x:Static resources:LangResources.WeeklyCalendar}">
-                <Grid Background="#ffe5e5e5" />
+                <views:ScheduleView />
             </TabItem>
         </TabControl>
     </StackPanel>

@@ -117,8 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddToTour" xml:space="preserve">
+    <value>Add to Tour</value>
+  </data>
+  <data name="ArtInstitute" xml:space="preserve">
+    <value>Art Institute</value>
+  </data>
+  <data name="BraidLine" xml:space="preserve">
+    <value>Braid Line</value>
+  </data>
+  <data name="BuckinghamFountain" xml:space="preserve">
+    <value>Buckingham Fountain</value>
+  </data>
+  <data name="BusyTimesAtTourStop" xml:space="preserve">
+    <value>Busy times at a tour-stop</value>
+  </data>
+  <data name="CloudGate" xml:space="preserve">
+    <value>Cloud Gate</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
+  </data>
+  <data name="EstimatedTouristCountThisWeek" xml:space="preserve">
+    <value>Estimated Tourist count this week: 12,570</value>
   </data>
   <data name="HotCoffeeAndPastries" xml:space="preserve">
     <value>Hot Coffee and Pastries</value>
@@ -128,6 +149,9 @@
   </data>
   <data name="HotCoffeeAndPastriesInfo" xml:space="preserve">
     <value>Start the morning with a jolt of coffee goodness from this trendy shop. Don't miss the Caramel Crater pastry, guaranteed to amp up your morning carb count.</value>
+  </data>
+  <data name="LurieGarden" xml:space="preserve">
+    <value>Lurie Garden</value>
   </data>
   <data name="PaddingtonsPastries" xml:space="preserve">
     <value>Paddington's Pastries</value>
@@ -140,5 +164,8 @@
   </data>
   <data name="WeeklyCalendar" xml:space="preserve">
     <value>Weekly Calendar</value>
+  </data>
+  <data name="Zekkis" xml:space="preserve">
+    <value>Zekki's</value>
   </data>
 </root>

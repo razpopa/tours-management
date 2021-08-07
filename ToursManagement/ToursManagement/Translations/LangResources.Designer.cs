@@ -61,11 +61,74 @@ namespace ToursManagement.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add to Tour.
+        /// </summary>
+        public static string AddToTour {
+            get {
+                return ResourceManager.GetString("AddToTour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Art Institute.
+        /// </summary>
+        public static string ArtInstitute {
+            get {
+                return ResourceManager.GetString("ArtInstitute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Braid Line.
+        /// </summary>
+        public static string BraidLine {
+            get {
+                return ResourceManager.GetString("BraidLine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buckingham Fountain.
+        /// </summary>
+        public static string BuckinghamFountain {
+            get {
+                return ResourceManager.GetString("BuckinghamFountain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Busy times at a tour-stop.
+        /// </summary>
+        public static string BusyTimesAtTourStop {
+            get {
+                return ResourceManager.GetString("BusyTimesAtTourStop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cloud Gate.
+        /// </summary>
+        public static string CloudGate {
+            get {
+                return ResourceManager.GetString("CloudGate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Details.
         /// </summary>
         public static string Details {
             get {
                 return ResourceManager.GetString("Details", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Estimated Tourist count this week: 12,570.
+        /// </summary>
+        public static string EstimatedTouristCountThisWeek {
+            get {
+                return ResourceManager.GetString("EstimatedTouristCountThisWeek", resourceCulture);
             }
         }
         
@@ -93,6 +156,15 @@ namespace ToursManagement.Translations {
         public static string HotCoffeeAndPastriesInfo {
             get {
                 return ResourceManager.GetString("HotCoffeeAndPastriesInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lurie Garden.
+        /// </summary>
+        public static string LurieGarden {
+            get {
+                return ResourceManager.GetString("LurieGarden", resourceCulture);
             }
         }
         
@@ -129,6 +201,15 @@ namespace ToursManagement.Translations {
         public static string WeeklyCalendar {
             get {
                 return ResourceManager.GetString("WeeklyCalendar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zekki&apos;s.
+        /// </summary>
+        public static string Zekkis {
+            get {
+                return ResourceManager.GetString("Zekkis", resourceCulture);
             }
         }
     }

@@ -5,8 +5,28 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ToursManagement.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="700" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="ToursListBox"
+                 ItemTemplate="{StaticResource TourTemplate}"
+                 MaxHeight="600">
+        </ListBox>
+        
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1">
+            <Button x:Name="CalcButton"
+                    Content="Calculate Tour Length"
+                    Click="CalcButton_Click"
+                    Height="50"
+                    Width="200"
+                    Margin="10"/>
+            <TextBlock x:Name="MessageTextBlock" />
+        </StackPanel>
+
     </Grid>
 </UserControl>

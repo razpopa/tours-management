@@ -13,6 +13,9 @@ namespace ToursManagement.Models
 		public string Description { get; set; }
 		public string Phone { get; set; }
 		public string ImageUri { get; set; }
+		public bool Selected { get; set; }
+		public int EstimatedMinutes { get; set; }
+
 		public List<BusyTime> BusyTimes { get; set; }
 	}
 
