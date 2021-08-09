@@ -10,28 +10,30 @@
         Height="700" Width="800"
         WindowState="Maximized"
         FontSize="18">
-    
-    <StackPanel>
-        <TextBlock x:Name="header"
-                   TextWrapping="Wrap"
-                   Text="{x:Static resources:LangResources.TourManagement}"
-                   FontSize="24"
-                   FontWeight="Bold"
-                   Margin="10,5,0,5"/>
-        
-        <TabControl x:Name="tabControl"
-                    MinHeight="680">
-            <TabItem Header="{x:Static resources:LangResources.TourStops}">
-                <views:TourStopsView />
-            </TabItem>
-            
-            <TabItem Header="{x:Static resources:LangResources.Details}">
-                <views:DetailView />
-            </TabItem>
-            
-            <TabItem Header="{x:Static resources:LangResources.WeeklyCalendar}">
-                <views:ScheduleView />
-            </TabItem>
-        </TabControl>
-    </StackPanel>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBlock x:Name="header"
+                       TextWrapping="Wrap"
+                       Text="{x:Static resources:LangResources.TourManagement}"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Margin="10,5,0,5" />
+
+            <TabControl x:Name="tabControl"
+                        MinHeight="680">
+                <TabItem Header="{x:Static resources:LangResources.TourStops}">
+                    <views:TourStopsView />
+                </TabItem>
+
+                <TabItem Header="{x:Static resources:LangResources.Details}">
+                    <views:DetailView />
+                </TabItem>
+
+                <TabItem Header="{x:Static resources:LangResources.WeeklyCalendar}">
+                    <views:ScheduleView />
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
